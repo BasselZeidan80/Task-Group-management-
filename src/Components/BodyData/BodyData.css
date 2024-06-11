@@ -1,0 +1,32 @@
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-wrap: wrap;
+
+}
+
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    min-height: 500px;
+    border-radius: 8px;
+    padding: 16px;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    overflow: hidden;
+
+
+
+}
+
+.card-date {
+    color: #888;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.card button {
+    margin: 5px;
+}
