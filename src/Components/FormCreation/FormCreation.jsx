@@ -49,7 +49,7 @@ export default function FormCreation() {
       Swal.fire({
         position: "top-center",
         icon: "success",
-        title: "Your product has been updated",
+        title: "Your Form has been updated",
         showConfirmButton: false,
         timer: 1000,
       });

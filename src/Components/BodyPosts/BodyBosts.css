@@ -1,0 +1,15 @@
+.PostContainer {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    min-height: 150px;
+    border-radius: 8px;
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    overflow: hidden;
+}
+
+i {
+    font-size: 14px;
+}

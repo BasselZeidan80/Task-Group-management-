@@ -26,7 +26,7 @@ export default function BodyData({ Forms, DeleteForm, updateForm }) {
                   Delete
                 </button>
                 <hr />
-                <Posts />
+                <Posts cardId="card1" />
               </div>
             </div>
           ))}

@@ -40,7 +40,6 @@ export default function Home() {
       name: name,
       Description: Description,
       date: currentDate,
-      posts: [],
     };
 
     if (editIndex !== null) {
@@ -53,7 +52,7 @@ export default function Home() {
       Swal.fire({
         position: "top-center",
         icon: "success",
-        title: "Your product has been updated",
+        title: "Your Form has been updated",
         showConfirmButton: false,
         timer: 1000,
       });
@@ -102,6 +101,9 @@ export default function Home() {
         setForms(UpdatedForm);
         console.log("UpdatedForm=======", UpdatedForm);
 
+
+        localStorage.setItem("Forms", JSON.stringify(UpdatedForm));
+        localStorage.removeItem("Posts");
         // Reset the form fields and button status
         setName("");
         setDescription("");
@@ -123,7 +125,7 @@ export default function Home() {
       <>
         <div className="container mt-5 ">
           <form onSubmit={handleAddFrm}>
-            <div className="row align-items-center justify-content-between ">
+            <div className="row align-items-center justify-content-between flex-wrap ">
               <div className="col-md-3 w-25 col-lg-3">
                 <div className="form-group mb-3">
                   <label htmlFor="name">Name</label>
@@ -154,8 +156,8 @@ export default function Home() {
               </div>
 
               <div className="col-md-3 w-25 col-lg-3">
-                <button className="AddBtn btn btn-outline-success w-50">
-                  {editIndex != null ? "Update" : "Add"}
+                <button className="AddBtn btn btn-success w-50">
+                  {editIndex != null ? "Update" : "Add +"}
                 </button>
               </div>
             </div>
